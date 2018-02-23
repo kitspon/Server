@@ -1,17 +1,20 @@
 <html>
     <head>
+	<script>
+		r = window.location.search;
+	</script>
         <title>Vdeio Test</title>
     </head>
     <body>
         <h1>Welcome to My HTTP Server</h1>
 	<form>
-	<input type="button" value="Video Test 1" onclick="window.location.href='http://192.168.43.212:8000/video/SampleVideo1.mp4'" />
+	<input type="button" value="Video Test 1" onclick="window.location.href='/video/SampleVideo1.mp4'" />
 	</form>
 	<form>
-	<input type="button" value="Video Test 2" onclick="window.location.href='http://192.168.43.212:8000/video/SampleVideo2.mp4'" />
+	<input type="button" value="Video Test 2" onclick="window.location.href='/video/SampleVideo2.mp4'" />
 	</form>
 	<form>
-	<input type="button" value="HTTP 404 error Response" onclick="window.location.href='http://192.168.43.212:8000/good'" />
+	<input type="button" value="HTTP 404 error Response" onclick="window.location.href='/good'" />
 	</form>
     </body>
 </html>
